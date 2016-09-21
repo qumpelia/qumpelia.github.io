@@ -7,34 +7,26 @@
 	position: relative;
 }
 
-.footer__left, .footer__right {
+.footer_left, .footer_right {
 	width: 50%;
 }
 
-.footer__left {
+.footer_left {
 	float: left;
-	height: 100%;
-	vertical-align: middle;
+	padding-top: 15px;
 }
 
-.copyright {
-	margin-top: 15px;
-}
-
-.footer__right {
+.footer_right {
 	float: right;
 	text-align: right;
+	padding-top: 4px;
 }
 
-.social {
-	margin-top: 4px;
-}
-
-.soc__icon {
+.soc_icon {
 	display: inline-block;
 }
 
-.soc__icon__link {
+.soc_icon-link {
 	color: #fff;
 }
 

@@ -8,22 +8,22 @@
 	text-align: right;
 }
 
-.sidebar__nav {
+.sidebar_nav {
 	list-style: none;
 	margin-right: 15px;
 }
 
-.sidebar__item__link {
+.sidebar_item-link {
 	display: block;
 	padding: 8px 20px 8px 0;
 	border-right: 6px solid transparent;
 }
 
-.sidebar__item__link:hover {
+.sidebar_item-link:hover {
 	color: #33c1e3;
 }
 
-.active .sidebar__item__link {
+.active .sidebar_item-link {
 	font-family: "firasans-bold", sans-serif;
 	color: #33c1e3;
 	border-right: 6px solid;
@@ -45,18 +45,18 @@
 	margin-top: 5px;
 }
 
-.about__left {
+.about_left {
 	float: left;
 	width: 45%;
 	text-align: center;
 }
 
-.about__right {
+.about_right {
 	width: 54%;
 	float: right;
 }
 
-.about__photo {
+.about_photo {
 	display: inline-block;
 	height: 220px;
 	width: 220px;
@@ -64,7 +64,7 @@
 	overflow: hidden;
 }
 
-.about__photo__img {
+.about_photo-img {
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
@@ -78,21 +78,21 @@
 	margin-bottom: 15px;
 }
 
-.about__description {
+.about_description {
 	height: 335px;
 	overflow: auto;
 	margin-bottom: 45px;
 }
 
-.about__description p {
+.about_description p {
 	margin-bottom: 10px;
 }
 
-.btn__wrapper {
+.btn_wrapper {
 	text-align: right;
 }
 
-.download__btn {
+.download_btn {
 	display: inline-block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -103,7 +103,7 @@
 	border-radius: 50px;
 }
 
-.download__btn:hover {
+.download_btn:hover {
 	background-color: #e85f61;
 	color: #fff;
 }
