@@ -491,6 +491,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .wrapper {
   min-height: 100%;
+  min-width: 960px;
   overflow: hidden;
 }
 
@@ -587,6 +588,21 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 5px;
 }
 
+.content-title {
+  font-family: "firasans-medium", sans-serif;
+  font-size: 35px;
+  color: #414141;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.about:after, .about:before, .career:after, .career:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Content - About */
 .about__left {
   float: left;
   width: 45%;
@@ -613,14 +629,6 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 100%;
   max-height: 100%;
   display: block;
-}
-
-.content-title {
-  font-family: "firasans-medium", sans-serif;
-  font-size: 35px;
-  color: #414141;
-  line-height: 1;
-  margin-bottom: 15px;
 }
 
 .about__description {
@@ -655,6 +663,195 @@ h1, h2, h3, h4, h5, h6, p {
 .about__btn-link:hover {
   background-color: #e85f61;
   color: #fff;
+}
+
+/* Content - Career */
+.career {
+  padding-left: 5px;
+}
+
+.career .content-title {
+  margin-bottom: 25px;
+}
+
+.career__left {
+  float: left;
+  width: 220px;
+}
+
+.career__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+}
+
+.career__right {
+  float: right;
+}
+
+.career__item {
+  position: relative;
+  width: 380px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.career__item:first-child:before {
+  display: none;
+}
+
+.career__item:last-child:after {
+  display: none;
+}
+
+.career__item:after, .career__item:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  position: absolute;
+  left: -21px;
+}
+
+.career__item:after {
+  top: 50%;
+}
+
+.career__item:before {
+  bottom: 50%;
+}
+
+.career__title {
+  font-family: "firasans-regular", sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  color: #5a5a5a;
+}
+
+.career__item:hover {
+  background-color: #33c1e3;
+}
+
+.career__item:hover .career__title, .career__item:hover .career__position, .career__item:hover .career__period {
+  color: #fff;
+}
+
+.career__item:hover .career__year {
+  font-family: "firasans-bold";
+  font-size: 18px;
+  line-height: 1.2;
+  color: #33c1e3;
+}
+
+.career__item:hover .career__year:after {
+  border-color: #94e0f2;
+}
+
+.career__year {
+  font-size: 14px;
+  position: absolute;
+  right: 110%;
+  top: 42%;
+}
+
+.career__year:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #33c1e3;
+  top: 0;
+  right: -28px;
+  height: 10px;
+  width: 10px;
+  border: 5px solid #f6f6f6;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  z-index: 1;
+}
+
+/* Content - Portfolio */
+.portfolio {
+  padding-left: 5px;
+}
+
+.portfolio .content-title {
+  margin-bottom: 20px;
+}
+
+.portfolio__list {
+  font-size: 0;
+}
+
+.portfolio__item {
+  display: inline-block;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 18px;
+  margin: 0 20px 20px 0;
+}
+
+.portfolio__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.portfolio__item:hover {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio__item:hover .portfolio__desc-title {
+  color: #e85f61;
+}
+
+.portfolio__pic {
+  height: 172px;
+}
+
+.portfolio__desc {
+  padding: 20px;
+}
+
+.portfolio__desc-title {
+  font-family: "firasans-regular";
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1;
+  color: #33c1e3;
+}
+
+.portfolio__desc-text {
+  font-family: "firasans-light";
+  font-size: 14px;
+}
+
+.portfolio__desc-type {
+  font-family: "firasans-bold";
+  font-size: 14px;
+  color: #aeaeae;
+  padding-top: 10px;
+}
+
+.portfolio__desc-type .fa {
+  font-size: 18px;
+  padding-right: 5px;
 }
 
 /* Sidebar */
