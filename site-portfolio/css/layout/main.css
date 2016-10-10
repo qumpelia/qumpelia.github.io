@@ -3619,6 +3619,8 @@ h1, h2, h3, h4, h5, h6, p {
   border: 2px solid #fff;
   border-radius: 50px;
   padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .start__btn-link:hover {
@@ -3691,8 +3693,6 @@ h1, h2, h3, h4, h5, h6, p {
   color: #33c1e3;
   background: url(../../img/decor/contacts_bg.png) repeat-x bottom;
   -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -3712,8 +3712,18 @@ h1, h2, h3, h4, h5, h6, p {
   right: 50%;
   transform: translateX(50%);
   z-index: 10;
-  width: 200px;
+  min-width: 210px;
+  margin-top: 10px;
   display: none;
+}
+
+.dropdown:before {
+  content: "";
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -28px;
 }
 
 .dropdown__triangle {
@@ -3837,6 +3847,8 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 10px 12px;
   border: 2px solid #e85f61;
   border-radius: 50px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .about__btn-link:hover {
@@ -3879,6 +3891,8 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 10px 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .career__item:first-child:before {
@@ -3978,6 +3992,8 @@ h1, h2, h3, h4, h5, h6, p {
   overflow: hidden;
   font-size: 18px;
   margin: 0 0 20px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .portfolio__item:hover {
@@ -4041,6 +4057,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   padding: 8px 20px 8px 0;
   border-right: 6px solid transparent;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .sidebar-nav__link:hover {
@@ -4150,8 +4168,15 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: left;
     margin-bottom: 15px;
   }
+  .sidebar-nav__list {
+    margin-left: -20px;
+  }
   .sidebar-nav__item {
     display: inline-block;
+    margin-left: 20px;
+  }
+  .sidebar-nav__link {
+    padding-right: 0;
   }
   .sidebar-nav__link, .sidebar-nav__item_active .sidebar-nav__link {
     border: none;
@@ -4196,9 +4221,6 @@ h1, h2, h3, h4, h5, h6, p {
   .contacts__link:hover {
     background: url(../../img/icons/phone_icon_hov.png) no-repeat;
   }
-  .dropdown {
-    margin-top: 10px;
-  }
   .about__left, .about__right, .footer__left, .footer__right, .career__left, .career__right {
     float: none;
     width: 100%;
@@ -4233,6 +4255,7 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (max-width: 480px) {
   .container {
     width: 95%;
+    max-width: 320px;
   }
   .header {
     margin-bottom: 7px;
@@ -4243,7 +4266,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .sidebar-nav__link {
     font-size: 14px;
-    padding-right: 13px;
+  }
+  .sidebar-nav__item {
+    margin-left: 10px;
+  }
+  .sidebar-nav__list {
+    margin-left: -10px;
   }
   .sidebar-nav__link-icon {
     display: none;
@@ -4269,9 +4297,6 @@ h1, h2, h3, h4, h5, h6, p {
   .portfolio__desc {
     text-align: left;
   }
-}
-
-@media screen and (max-width: 360px) {
   .empty {
     height: 115px;
   }
