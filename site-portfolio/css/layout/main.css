@@ -4213,6 +4213,9 @@ h1, h2, h3, h4, h5, h6, p {
     width: 30%;
     padding: 1.2rem;
   }
+  .contacts:hover .contacts__link {
+    background: url(../../img/icons/phone_icon_hov.png) no-repeat;
+  }
   .contacts__link {
     background: url(../../img/icons/phone_icon.png) no-repeat;
     display: inline-block;
@@ -4222,9 +4225,6 @@ h1, h2, h3, h4, h5, h6, p {
     height: 32px;
     width: 32px;
     vertical-align: middle;
-  }
-  .contacts__link:hover {
-    background: url(../../img/icons/phone_icon_hov.png) no-repeat;
   }
   .about__left, .about__right, .footer__left, .footer__right, .career__left, .career__right {
     float: none;
