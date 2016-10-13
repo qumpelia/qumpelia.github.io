@@ -3591,6 +3591,11 @@ h1, h2, h3, h4, h5, h6, p {
   top: -70px;
 }
 
+.start__photo-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .start__block {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -3602,7 +3607,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 21px;
   background-color: #fff;
   border-radius: 10px 10px 0 0;
-  padding: 90px 50px 20px;
+  padding: 90px 70px 20px;
 }
 
 .start__btn {
@@ -4186,7 +4191,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 10px;
   }
   .content-title {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .about__right {
     width: 70%;
