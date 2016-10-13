@@ -3693,17 +3693,17 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
+.contacts:hover .contacts__link {
+  color: #e85f61;
+  background: url(../../img/decor/contacts_bg_hover.png) repeat-x bottom;
+}
+
 .contacts__link {
   font-family: "firasans-bold", sans-serif;
   color: #33c1e3;
   background: url(../../img/decor/contacts_bg.png) repeat-x bottom;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.contacts__link:hover {
-  color: #e85f61;
-  background: url(../../img/decor/contacts_bg_hover.png) repeat-x bottom;
 }
 
 .dropdown {
